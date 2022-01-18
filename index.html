@@ -7,25 +7,7 @@
   <meta name="viewport" content="width=device-width">
   <title>MathJax v3 dynamic equations using CSS and javascript</title>
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script>
-  MathJax = {
-    tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
-    chtml: {
-      displayAlign: 'left'
-    },
-    startup: {
-      pageReady: function () {
-        //
-        //  Do the usual startup (which does a typeset).
-        //  When that is all done, un-hide the page.
-        //
-        return MathJax.startup.defaultPageReady().then(function () {
-          document.getElementById("hidden").disabled = true;
-        });
-      }
-    }
-  };
-  </script>
+  
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 
   <script type="text/javascript">
