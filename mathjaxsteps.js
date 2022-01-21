@@ -16,7 +16,7 @@ MathJax = {
     }
   };
  
-  <script type="text/javascript">
+  
   //
   //  Use a closure to hide the local variable
   //
@@ -52,4 +52,4 @@ MathJax = {
       }
     }
   })();
-  </script>
+  
